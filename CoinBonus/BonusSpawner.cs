@@ -46,11 +46,14 @@ public class BonusSpawner : MonoBehaviour
     {
         int randomIndex = Random.Range(0, bonusPrefab.Length);
         GameObject instantiate = Instantiate(bonusPrefab[randomIndex], NextPosition(), Quaternion.identity);
+        AddDebug("Hello");
     }
 
     public void AddDebug(string message)
     {
         Debug.Log(message);
     }
+
+    
 
 }
